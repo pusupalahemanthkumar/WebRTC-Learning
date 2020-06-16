@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GetUserMedia Demo</title>
+    <script src="./js/main.js" defer></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            line-height: 1.7;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            text-align: center;
+            background: #f4f4f4;
+        }
+        .container{
+            height:70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #video-capturing{
+            width:80%;
+            height:50rem;
+            margin:2rem;
+            margin-top: 5rem;
+            /* background: #333; */
+        }
+        #btn{
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 3px;
+            outline: none;
+            cursor: pointer;
+            background: #f4f4f4;
+        }
+    </style>
+  </head>
+  <body>
+      <header>
+          <h1>GET USER MEDIA DEMO</h1>
+      </header>
+    <div class="container">
+      <video id="video-capturing" autoplay playsinline ></video>
+      <button id="btn">Open Camera</button>
+      <div id="error-message"></div>
+    </div>
+  </body>
+</html>
